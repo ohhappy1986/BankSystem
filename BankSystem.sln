@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountService", "AccountService\AccountService.csproj", "{73A29739-418A-4390-9DD1-61578117BD66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionService", "TransactionService\TransactionService.csproj", "{7CAD2C89-CDB7-49CB-B547-7EC530C04594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{268BBC12-29C8-42D0-B4CA-B8C06C02EB5E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19D2DC09-7642-432E-8509-AAFB11586CEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountService.UnitTests", "AccountService.UnitTests\AccountService.UnitTests.csproj", "{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.UnitTests", "TransactionService.UnitTests\TransactionService.UnitTests.csproj", "{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73A29739-418A-4390-9DD1-61578117BD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A29739-418A-4390-9DD1-61578117BD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A29739-418A-4390-9DD1-61578117BD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A29739-418A-4390-9DD1-61578117BD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAD2C89-CDB7-49CB-B547-7EC530C04594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAD2C89-CDB7-49CB-B547-7EC530C04594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAD2C89-CDB7-49CB-B547-7EC530C04594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAD2C89-CDB7-49CB-B547-7EC530C04594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7339FEA4-E4DC-4385-A6F2-1AB96CA111E1} = {19D2DC09-7642-432E-8509-AAFB11586CEE}
+		{CD515A9C-BDEA-49E6-88C7-EC1542CF8B28} = {19D2DC09-7642-432E-8509-AAFB11586CEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8825E3F-9785-449A-98A2-D21FF01BA7DD}
+	EndGlobalSection
+EndGlobal

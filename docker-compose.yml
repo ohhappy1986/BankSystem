@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  account-service:
+    build: 
+        context: .
+        dockerfile: AccountService/Dockerfile
+    ports:
+      - 8100:80
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+        network:
+            ipv4_address: 172.30.0.2
+  transaction-service:
+    build: 
+        context: .
+        dockerfile: TransactionService/Dockerfile
+    ports:
+      - 8101:80
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+        network:
+            ipv4_address: 172.30.0.3
+networks:
+    network:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.30.0.0/16
+                  gateway: 172.30.0.1

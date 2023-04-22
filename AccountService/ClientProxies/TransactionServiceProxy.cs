@@ -8,9 +8,6 @@ namespace AccountService.ClientProxies
     /// </summary>
     public class TransactionServiceProxy : BaseRestfulProxy, ITransactionServiceProxy
     {
-        //hardcode accountServiceUrl for demo/test purpose
-        //private readonly string _transactionServiceUrl = "http://localhost:8101/api/transaction";
-
         private readonly ILogger<TransactionServiceProxy> _logger;
         private readonly IConfiguration _configuration;
 

@@ -12,8 +12,7 @@ Due to only 2 microservices, I chose to only using simple proxy to communicate b
 
 ### If in Real world
 
-In real production world, when microservices are a lot, API gateway is required. 
-As well as some event server like RabbitMQ FIFO queue to queue the events between services to assure the requests coming in order to achieve ACID between services.
+In real production world, when microservices are a lot, API gateway is required or uaw some event server like RabbitMQ FIFO queue to queue the events between services to improve performance and scabaility.
 
 ### Database
 It is using InMemory database in EF core and has demo data populated. Schema below:

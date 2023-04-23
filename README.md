@@ -9,6 +9,8 @@ This project is to a demo bank system with required microservices support accoun
 This bank Web API service has 2 microservices: AccountService for handling account related request, TransactionService for handing transaction related request.
 The reason to separate them is due to the transaction service can have much higher usage in real world and the instances requirment maybe different than account service.
 Due to only 2 microservices, I chose to only using simple proxy to communicate between each other. 
+Use 3 layers (Controller, BLL, Repository) design for better code managebility.
+Use ApiVersion for better user upgrade compatiblity.
 
 ### If in Real world
 

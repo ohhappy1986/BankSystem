@@ -12,9 +12,10 @@ Due to only 2 microservices, I chose to only using simple proxy to communicate b
 Use 3 layers (Controller, BLL, Repository) design for better code managebility.
 Use ApiVersion for better user upgrade compatiblity.
 
-### If in Real world
+### Some thought
 
 In real production world, when microservices are a lot, API gateway is required or uaw some event server like RabbitMQ FIFO queue to queue the events between services to improve performance and scabaility.
+All service should have some redunany with multiple same service instances behind load balancer.
 
 ### Database
 It is using InMemory database in EF core and has demo data populated. Schema below:

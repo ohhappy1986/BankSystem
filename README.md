@@ -16,6 +16,7 @@ Use ApiVersion for better user upgrade compatiblity.
 
 In real production world, when microservices are a lot, API gateway is required or uaw some event server like RabbitMQ FIFO queue to queue the events between services to improve performance and scabaility.
 All service should have some redundancy with multiple same service instances behind load balancer to achieve high-availability and performance.
+Rollback is needed to be added when making calls between 2 services.
 
 ### Database
 It is using InMemory database in EF core and has demo data populated. Schema below:
